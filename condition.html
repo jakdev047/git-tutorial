@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Java Script(condition)</title>
+	</head>
+
+	<body>
+		<h2> Condition : </h2>
+		<script>
+			// if , else if , else
+			var num = prompt("Please enter your number", "");
+			if (num>=80 && num<=100){
+				document.write('<h1 style="color:green">A+</h1><br /><br />');
+			}
+			else if (num>=70 && num<=79){
+				document.write('<h1 style="color:green">A</h1><br /><br />');
+			}
+			else if (num>=60 && num<=69){
+				document.write('<h1 style="color:green">A-</h1><br /><br />');
+			}
+			else if (num>=50 && num<=59){
+				document.write('<h1 style="color:green">B</h1><br /><br />');
+			}
+			else if (num>=40 && num<=49){
+				document.write('<h1 style="color:green">C</h1><br /><br />');
+			}
+			else if (num>=33 && num<=39){
+				document.write('<h1 style="color:green">D</h1><br /><br />');
+			}
+			else{
+				document.write('<h1 style="color:red">F</h1><br /><br />');
+			}
+
+			// ternary oparator
+			var y = 2;
+
+			y==2 ? document.write('<h1 style="color:green">True</h1>'):document.write('<h1 style="color:red">False</h1><br />')
+
+			// ==== means same side equal ie. value of y is numerical but "2" is a string
+			y==="2" ? document.write('<h1 style="color:green">True</h1>'):document.write('<h1 style="color:red">False</h1><br />')
+		</script>
+	</body>
+
+</html>
