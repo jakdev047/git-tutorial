@@ -8,46 +8,30 @@
 
 	<body>
 		<h2> Condition : </h2>
-		
 		<script>
-			// switch case
- 			var atom = prompt("Please enter your atomic number", "");
-
-			switch (atom) {
-				case "H":
- 					document.write('<h3 style="color:blue">This is hydogen atom. This atomic number 1 & atomic mass is 1.</h3>');
-					break;
-				case "He":
-					document.write('<h3 style="color:blue">This is helliun atom. This atomic number 2 & atomic mass is 4.</h3>');
-					break;
-				case "Li":
-					document.write('<h3 style="color:blue">This is lithium atom. This atomic number 3 & atomic mass is 5.</h3>');
-					break;
-				case "Be":
-					document.write('<h3 style="color:blue">This is beyrellium atom. This atomic number 4 & atomic mass is 7.</h3>');
-					break;
-				case "B":
-					document.write('<h3 style="color:blue">This is boron atom. This atomic number 5 & atomic mass is 10.</h3>');
-					break;
-				case "C":
-					document.write('<h3 style="color:blue">This is carbon atom. This atomic number 6 & atomic mass is 12.</h3>');
-					break;
-				case "N":
-					document.write('<h3 style="color:blue">This is nitrogen atom. This atomic number 7 & atomic mass is 14.</h3>');
-					break;
-				case "O":
-					document.write('<h3 style="color:blue">This is oxygen atom. This atomic number 8 & atomic mass is 16.</h3>');
-					break;
-				case "F":
-					document.write('<h3 style="color:blue">This is flurine atom. This atomic number 9 & atomic mass is 18.</h3>');
-					break;
-				case "Ne":
-					document.write('<h3 style="color:blue">This is neon atom. This atomic number 10 & atomic mass is 20.</h3>');
-					break;
-				default:
- 					document.write('<h3 style="color:red">Please enter your correct atomic symbol</h3>');
+			// if , else if , else
+			var num = prompt("Please enter your number", "");
+			if (num>=80 && num<=100){
+				document.write('<h1 style="color:green">A+</h1><br /><br />');
 			}
-
+			else if (num>=70 && num<=79){
+				document.write('<h1 style="color:green">A</h1><br /><br />');
+			}
+			else if (num>=60 && num<=69){
+				document.write('<h1 style="color:green">A-</h1><br /><br />');
+			}
+			else if (num>=50 && num<=59){
+				document.write('<h1 style="color:green">B</h1><br /><br />');
+			}
+			else if (num>=40 && num<=49){
+				document.write('<h1 style="color:green">C</h1><br /><br />');
+			}
+			else if (num>=33 && num<=39){
+				document.write('<h1 style="color:green">D</h1><br /><br />');
+			}
+			else{
+				document.write('<h1 style="color:red">F</h1><br /><br />');
+			}
 
 			// ternary oparator
 			var y = 2;
