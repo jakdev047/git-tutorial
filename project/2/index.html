@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM</title>
+
+		<style>
+			.one {
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    width: 250px;
+			    height: 200px;
+			    font-size: 30px;
+			    font-weight: 600;
+			    color:#fff;
+			    background:red;
+			    border-radius: 10px;
+			}
+			.button-group button{
+				background: red;
+			    border: 1px solid red;
+			    padding: 30px;
+			    margin: 20px;
+			    font-size: 16px;
+			    color: #fff;
+			    text-transform: capitalize;
+			    border-radius: 5px;
+			    cursor: pointer;
+			    outline: 0!important;	
+			}
+			.button-group button.bg-1{background: yellow;border: 1px solid yellow;}
+			.button-group button.bg-2{background: blue;border: 1px solid blue;}
+			.button-group button.bg-3{background: black;border: 1px solid black;}
+			.button-group button.bg-4{background: aqua;border: 1px solid aqua;}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div class="one">
+			<h3>This is red box</h3>
+		</div>
+
+		<div class="button-group">
+			<button onclick="changeOne()">red</button>
+			<button onclick="changeTwo()" class="bg-1">yellow</button>
+			<button onclick="changeThree()" class="bg-2">blue</button>
+			<button onclick="changeFour()" class="bg-3">black</button>
+			<button onclick="changeFive()" class="bg-4">aqua</button>
+		</div>
+
+		<div class="two">
+			<img src="image/g1.jpg" alt="image">
+		</div>
+
+		<div class="button-group">
+			<button onclick="imageOne()">image one</button>
+			<button onclick="imageTwo()" class="bg-1">image two</button>
+			<button onclick="imageThree()" class="bg-2">image three</button>
+			<button onclick="imageFour()" class="bg-3">image four</button>
+			<button onclick="imageFive()" class="bg-4">image five</button>
+		</div>
+		
+
+		<script src="custom.js"></script>
+	</body>
+
+</html>
