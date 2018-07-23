@@ -63,6 +63,9 @@ resultReduce;
 
 var skill = ['HTML5','CSS3','Bootstrap 4','Vanilla JS','JQuery'];
 
+
+// process one
+
 function myForEach(value,cbf) {
     for (let i = 0; i <=value.length-1; i++) {
         return cbf(value);
@@ -73,11 +76,30 @@ function myForEach(value,cbf) {
 var resultForEach = myForEach(skill,function (item) {
     return 'I Know : ' + item[0];
 })
-
 console.log(resultForEach);
 
 var resultForEach1 = myForEach(skill, function (item) {
     return 'I Know : ' + item[1];
 })
-
 console.log(resultForEach1);
+
+
+// process two
+
+function myForEach2(value, cbf) {
+    for (let i = 0; i <= value.length - 1; i++) {
+        cbf(value[i]);
+
+    }
+}
+
+var resultForEach = myForEach2(skill, function (item) {
+    // return 'I Know : ' + item;
+    console.log("I Know : " + item);
+});
+
+
+console.log(resultForEach);
+
+// sort()
+
