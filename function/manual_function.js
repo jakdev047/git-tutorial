@@ -103,3 +103,12 @@ console.log(resultForEach);
 
 // sort()
 
+var arr = [1, 4,  77, 63, 100, 8, 1020, 23];
+
+function arrSort(x, y) {
+   return(x-y);
+}
+
+console.log(arr.sort(arrSort));
+
+
