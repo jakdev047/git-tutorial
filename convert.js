@@ -1,3 +1,4 @@
+//number to string
 var myNumber = 20;
 
 console.log(typeof(myNumber));
@@ -14,3 +15,11 @@ if(myNumber === myString) {
 else{
     console.log('No');
 } 
+
+// toFixed(how many digit)
+
+var pi = Math.PI;
+
+pi;
+
+console.log(pi.toFixed(3));
